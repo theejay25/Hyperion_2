@@ -1,0 +1,19 @@
+* {
+    padding: 3;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #000;
+
+    /* align-content: space-around; */
+}
+
+.btn {
+    background-color: #000;
+}
