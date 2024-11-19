@@ -128,5 +128,26 @@ ul li {
     border-radius: 6px;
     text-align: center;
     align-content: center;
-    background-color: #f4863a;
+    border-bottom: 1px solid #000;
+}
+
+.row {
+    margin-top: -10%;
+    width: 100vw;
+    height: 40vh;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side {
+    width: 20vw;
+    height: 97%;
+    background-color: blue;
+}
+
+.section {
+    width: 17vw;
+    height: 46%;
+    background-color: orange;
 }
