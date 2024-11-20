@@ -61,6 +61,7 @@ ul li {
     font-size: 14px;
     border: none;
     height: 5vh;
+    cursor: pointer;
     width: 4vw;
     text-transform: capitalize;
     border-radius: 5px;
@@ -71,6 +72,7 @@ ul li {
     height: 6vh;
     width: 5vw;
     font-size: 15px;
+    border-radius: 7px;
     letter-spacing: 1px;
 }
 
