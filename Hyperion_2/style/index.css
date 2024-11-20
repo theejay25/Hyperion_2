@@ -136,18 +136,37 @@ ul li {
     width: 100vw;
     height: 40vh;
     border-bottom: 1px solid #000;
-    display: flex;
     justify-content: space-between;
+    /* Reniside's code */
+    display: grid;
+    grid-template-columns: 33% 66%;
 }
 
-.side {
-    width: 20vw;
-    height: 97%;
+/* === Reniside's Code === */
+
+.left-side{
     background-color: blue;
+    border-radius: 5px;
+    height: 100%;
 }
 
-.section {
-    width: 17vw;
-    height: 46%;
+.right-side{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.right-side-element{
     background-color: orange;
+    gap: 20px;
+    margin: 10px;
+}
+
+.right-side-element1{
+    grid-column: 1/3;
+}
+
+.right-side-element4{
+    grid-column: 2/4;
 }
