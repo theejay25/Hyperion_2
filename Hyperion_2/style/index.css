@@ -32,13 +32,17 @@ ul li {
 .nav {
     position: fixed;
     display: flex;
-    /* background-color: #9FB09D; */
+    /* === Reniside's Code --> Uncommented bgcolor === */
+    background-color: #9FB09D;
     flex-direction: row;
     width: 97vw;
     height: 12vh;
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #000;
+    /* === Reniside's Code === */
+    position: fixed;
+    z-index: 99;
 }
 
 .name {
@@ -121,18 +125,8 @@ ul li {
     color: #f4863a;
 }
 
-.carousell-space {
-    margin-top: 7%;
-    width: 100%;
-    height: 38vh;
-    border-radius: 6px;
-    text-align: center;
-    align-content: center;
-    border-bottom: 1px solid #000;
-}
-
 .row {
-    margin-top: -10%;
+    margin-top: 5%;
     width: 100vw;
     height: 40vh;
     border-bottom: 1px solid #000;
@@ -170,3 +164,17 @@ ul li {
 .right-side-element4{
     grid-column: 2/4;
 }
+
+/* === Reniside's Code --> Swiper Section === */
+/* I replaced "carousel-space" tag with swiper so all the properties where placed in swiper*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 7%;
+    border-radius: 6px;
+    text-align: center;
+    align-content: center;
+}
+
