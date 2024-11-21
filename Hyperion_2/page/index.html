@@ -5,39 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperion//home</title>
     <link rel="stylesheet" href="../style/index.css">
+
+    <!-- This swiper css ref code should be left here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<body>
-    
-</body>
-</html>
 <body>
     <div class="container">
     <nav class="nav">
-    <p class="name">Hyperion</p>
-    <form>
-        <input type="text" class="search" placeholder="search for designs">
-        <input type="button" value="search" class="btn">
-    </form>    
-        <a href="" class="link">Sign in</a>
-        <ul>
-            <li class="icons"><i class="fas fa-heart" title="Favorite"></i></li>
-            <li class="icons"><i class="fas fa-filter" title="Filter"></i></li>
-            <li class="icons"><i class="fas fa-basket-shopping" title="Basket"></i></li>
-        </ul>
+        <p class="name">Hyperion</p>
+        <form>
+            <input type="text" class="search" placeholder="search for designs">
+            <input type="button" value="search" class="btn">
+        </form>    
+            <a href="" class="link">Sign in</a>
+            <ul>
+                <li class="icons"><i class="fas fa-heart" title="Favorite"></i></li>
+                <li class="icons"><i class="fas fa-filter" title="Filter"></i></li>
+                <li class="icons"><i class="fas fa-basket-shopping" title="Basket"></i></li>
+            </ul>
     </nav>
     
-    <div class="carousell-space">
-        space for carousell
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="popular1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="popular2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="popular3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="popular4.jpg" alt="">
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
 
+    <!-- === Reniside's Code === -->
     <div class="row">
-        <aside class="side"></aside>
-        <div class="section"></div>
-        <div class="section"></div>
-        <div class="section"></div>
-        <div class="section"></div>
+        <aside class="left-side"></aside>
+        <div class="right-side">
+            <div class="right-side-element1 right-side-element"></div>
+            <div class="right-side-element2 right-side-element"></div>
+            <div class="right-side-element3 right-side-element"></div>
+            <div class="right-side-element4 right-side-element"></div>
+        </div>
     </div>
     </div>
+
+    <!-- This swiper cdn code has to be left in the body, it shoudn't be moved to any other
+    part of the html script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+              delay: 3000,           // Autoplay delay in milliseconds
+              disableOnInteraction: false,
+            },
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+            // And if we need scrollbar
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+          });
+    </script>
 </html>
