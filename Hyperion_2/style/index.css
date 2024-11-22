@@ -197,6 +197,15 @@ ul li {
     border-radius: 8px;
 }
 
+.txt0 {
+    margin-top: 43%;
+    margin-left: 1%;
+}
+
+.discount {
+    margin-left: 1%;
+}
+
 .txt1 {
     margin-top: 16%;
     margin-left: 1%;
@@ -213,9 +222,8 @@ ul li {
 }
 
 .txt4 {
-    margin-top: -14%;
+    margin-top: 15%;
     height: 10%;
-    /* margin-left: 56%;
-    max-width: 50%; */
-    color: #000;
+    margin-left: 1%;
+    
 }
