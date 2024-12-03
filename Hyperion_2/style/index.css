@@ -187,6 +187,13 @@ ul li {
     align-content: center;
 }
 
+/* Jay's updates */
+
+.swiper-slide {
+    background-color: green;
+}
+
+
 .txt {
     color: #fff;
     font-family: raleway, sans-serif;
@@ -203,7 +210,7 @@ ul li {
 }
 
 .discount {
-    margin-left: 1%;
+    margin-left: 1%;    
 }
 
 .txt1 {
